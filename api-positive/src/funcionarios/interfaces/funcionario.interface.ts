@@ -1,10 +1,11 @@
-export interface Funcionario {
-    readonly _id: number;
+import { Document } from 'mongoose';
+
+export interface Funcionario extends Document {
     readonly email: string;
     nome: string;
     senha: string;
     cargo: string;
     cargaHoraria: string;
     idade: number;
-    nívelAcesso: number;
+    nivelAcesso: number;
 }
